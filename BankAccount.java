@@ -7,13 +7,10 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public void deposit(double amount) {
-        // TODO: add the amount to the balance
-    }
-
     public boolean withdraw(double amount) {
-        if (balance - amount >= 50.0) {
-            balance -= amount;
+        double totalDeduction = amount + 2.0;
+        if (balance - totalDeduction >= 50.0) {
+            balance -= totalDeduction;
             return true;
         }
         return false;
