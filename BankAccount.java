@@ -12,10 +12,10 @@ public class BankAccount {
     }
 
     public boolean withdraw(double amount) {
-        // TODO:
-        // Withdraw the requested amount if sufficient funds are available.
-        // Return true if the withdrawal succeeds.
-        // Return false otherwise.
+        if (balance >= amount + 2.0) {
+            balance -= (amount + 2.0);
+            return true;
+        }
         return false;
     }
 
